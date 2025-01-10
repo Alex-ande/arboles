@@ -35,12 +35,12 @@ public class ArbolBinario {
                 if (node.getLeft() != null) {
                     printTree(node.getLeft(), prefix + (isleft ? "  " : "   "), true);
                 } else {
-                    System.out.println(prefix + (isleft ? "├ " : "   └── null "));
+                    System.out.println(prefix + (isleft ? "| " : "├──null "));
                 }
                 if (node.getRight() != null) {
                     printTree(node.getRight(), prefix + (isleft ? "  " : "   "), false);
                 } else {
-                    System.out.println(prefix + (isleft ? "├ " : "   └── null "));
+                    System.out.println(prefix + (isleft ? "| " : "├──null "));
                 }
             }
         }
@@ -52,6 +52,6 @@ public class ArbolBinario {
     }
 
     public Node getRoot() {
-        return null;
+        return root;
     }
 }
