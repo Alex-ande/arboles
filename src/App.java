@@ -1,13 +1,16 @@
 
 
 import Main.Ejercicio_03_listLeves.ListLevels;
+import Main.Materia.Controllers.ArbolAVL;
 import Main.Materia.Controllers.ArbolBinario;
 import Main.Materia.Controllers.ArbolRecorrido;
 
 public class App {
     public static void main(String[] args) throws Exception {
-     runArbolBinario();
-       runEjercicio3();
+    // runArbolBinario();
+     //  runEjercicio3();
+       runArbolAvl();
+
     }
 
     public static void runEjercicio3 (){
@@ -46,4 +49,15 @@ public class App {
             System.out.println("inorder");
             arbolRecorrido.inOrderRecursivo(arbolBinario.getRoot());
     }
+    private static void runArbolAvl(){
+ int [] valores = {10,20,15,24,9,21,23,50,25};
+
+ ArbolAVL arbolAVL = new ArbolAVL();
+ for (int value : valores){
+ 
+ arbolAVL.insert(value);
+ arbolAVL.printTree();
+    
+ }
+}
 }
