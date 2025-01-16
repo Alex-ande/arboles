@@ -6,20 +6,11 @@ public class Node {
     private Node right;
     private int height;
 
-    public int getHeight() {
-        return height;
-    }
-
-    public void setHeight(int height) {
-        this.height = height;
-    }
-
     public Node(int value) {
-  this.value = value;
-  this.left = null;
-  this.right = null;
- 
-
+        this.value = value;
+        this.left = null;
+        this.right = null;
+        this.height = 1;
     }
 
     public int getValue() {
@@ -46,4 +37,12 @@ public class Node {
         this.right = right;
     }
 
+    public int getHeight() {
+        return height;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
+    }
 }
+
